@@ -14,19 +14,21 @@ debug = 0
 distance_error = 1e-2
 body_head = "\n\
 (module dxfgeneratedcopper (layer F.Cu) (tedit 0) \n\
-  (fp_text reference G*** (at 0 0) (layer F.SilkS) hide \n\
-    (effects (font (thickness 0.3))) \n\
+  (fp_text reference G*** (at 0 -4) (layer F.SilkS) hide \n\
+    (effects (font (thickness 0.2))) \n\
   ) \n\
-  (fp_text value value (at 0.75 0) (layer F.SilkS) hide \n\
-    (effects (font (thickness 0.3))) \n\
+  (fp_text value value (at 0 4) (layer F.SilkS) hide \n\
+    (effects (font (thickness 0.2))) \n\
   ) "
 
 body_end = "\n)"
 
 fp_poly_head =   "(fp_poly \
   (pts "
-fp_poly_end = " ) \n\
-	(layer F.Cu) (width 0.001)) "
+fp_poly_end_1 = " ) \n\
+	(layer "
+
+fp_poly_end_2 = " ) (width 0.001)) "
 
 def	get_start_end_pts(entity):
 	if "LINE" == entity.dxftype:
@@ -170,7 +172,7 @@ for layer in layers:
 				if debug:
 					print >>sys.stderr,"shape closed at", pts
 				print "(xy ", pts[0]," ", -pts[1],")" 
-				print fp_poly_end
+				print fp_poly_end_1, layer, fp_poly_end_2
 						
 				#find next shape
 				start_new_shape()
