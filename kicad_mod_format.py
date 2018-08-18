@@ -55,8 +55,25 @@ class Cmd:
 
 
 # convert command string to Cmd creator
-_CmdList = ('at', 'layer', 'tedit', 'fp_text',
-            'effects', 'thickness', 'font', 'hide')
+_CmdList = ('at',
+            'layer',
+            'tedit',
+            'fp_text',
+            'effects',
+            'thickness',
+            'font',
+            'hide',
+            'fp_line',
+            'fp_circle',
+            'fp_arc',
+            'fp_poly',
+            'fp_curve',
+            'pts',
+            'xy',
+            'start',
+            'end',
+            'angle',
+            'width')
 for c in _CmdList:
     exec('{} = functools.partial(Cmd, "{}")'.format(c, c))
 
