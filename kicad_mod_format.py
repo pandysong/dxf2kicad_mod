@@ -102,4 +102,4 @@ class Module(Cmd):
 
     def __init__(self, module_name, children=()):
         super().__init__('module', module_name,
-                         children=self.head+children)
+                         children=self.head+tuple(children))
