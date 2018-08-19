@@ -36,7 +36,7 @@ layer is handled separately, the layer name is converted to layer name in
 ### install `dxfgrabber`
 
 ```
-http://pythonhosted.org/dxfgrabber/#
+https://github.com/mozman/dxfgrabber.git
 ```
 
 ### create `DXF` file using `autocad ` or `draftsight`
