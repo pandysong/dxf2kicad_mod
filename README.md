@@ -7,6 +7,10 @@ to design a simple PCB, but the shape of footprint could not be designed using
 and convert it to the `Kicad` footprint format. Hence this work was a bit of
 hacking.
 
+A generated footprint:
+
+![footprint sample](sample.png)
+
 ## How it works
 
 It will read the `DXF` file and find lines and arcs (only supporting these two
