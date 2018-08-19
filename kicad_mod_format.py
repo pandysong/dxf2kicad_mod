@@ -85,7 +85,7 @@ class Module(Cmd):
     - module name `module_name`
     - fixed command plus user defined sub-commands
     '''
-    head = (layer('F.cu'),
+    head = (layer('F.Cu'),
             tedit(0),
             fp_text('reference', 'G***', children=(
                 at(0, -4),
