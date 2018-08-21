@@ -11,6 +11,9 @@ A generated footprint from [a dxf file](test_data.dxf):
 
 ![footprint sample](sample.png)
 
+The corresponding [`kicad_mod` file](test_data.kicad_mod) which could be viewed
+by `Kicad` footprint viewer.
+
 ## How it works
 
 It will read the `DXF` file and find lines and arcs (only supporting these two
