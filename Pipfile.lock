@@ -1,0 +1,29 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "89099356897be63f4d001fc1d10d3897040aba5429a8231708601567187efc82"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.6"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "dxfgrabber": {
+            "hashes": [
+                "sha256:b694c957fc4df8772d30a33890c9a55985ed8b90f2479846ef308e94e2e1b854",
+                "sha256:b8586172fc8a61471d83f8a66b57442061d1690f4c801e03180a9a7128348b7f"
+            ],
+            "index": "pypi",
+            "version": "==1.0.0"
+        }
+    },
+    "develop": {}
+}

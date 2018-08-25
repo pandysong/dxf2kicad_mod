@@ -40,15 +40,55 @@ layer is handled separately, the layer name is converted to layer name in
 
 ## how to use
 ### install python
+
 ### install `dxfgrabber`
 
 ```
 https://github.com/mozman/dxfgrabber.git
 ```
 
-### create `DXF` file using `autocad ` or `draftsight`
+### clone this `repe`
+
+```
+clone https://github.com/pandysong/dxf2kicad_mod.git
+cd dxf2kicad_mod
+```
+
 ### using following command line to generate `kicad_mod`
 
 ```
 python dxf2kicad_mode "Your-dxf-file-name-here" > "your kicad_mod file.kicad_mod"
 ```
+
+### Or using `pipenv`
+
+Install `pipenv` is not yet installed:
+```
+pip install pipenv
+```
+
+#### clone this `repo`
+```
+clone https://github.com/pandysong/dxf2kicad_mod.git
+cd dxf2kicad_mod
+```
+
+#### using `pipenv` to install dependencies
+
+```
+pipenv install
+```
+
+#### enable `pipenv`
+
+```
+pipenv shell
+```
+
+Then use it as normal
+
+```
+python dxf2kicad_mod.py test_data.dxf > test_data.kicad_mod
+```
+
+
