@@ -10,8 +10,6 @@ The format of kicad_mod is in `s-expressions`
 https://en.wikipedia.org/wiki/S-expression
 '''
 
-import functools
-
 
 class Cmd:
     '''
